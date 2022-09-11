@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nest-k8s-depl
+
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: nest-k8s
+  template:
+    metadata:
+      labels:
+        app: nest-k8s
+    spec:
+      containers:
+        - name: nest-k8s
+          image: masbhauddin/nest-k8s
