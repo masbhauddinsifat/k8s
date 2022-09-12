@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: k8s-angular-depl
+
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: k8s-angular
+  template:
+    metadata:
+      labels:
+        app: k8s-angular
+    spec:
+      containers:
+        - name: k8s-angular
+          image: masbhauddin/k8s-angular

@@ -1,5 +1,5 @@
 # setp 1
-FROM node:16-alpine3.16 as build
+FROM node:16-alpine as build
 
 WORKDIR /backend_app
 COPY package.json .
