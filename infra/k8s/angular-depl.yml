@@ -2,7 +2,6 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: k8s-angular-depl
-
 spec:
   replicas: 1
   selector:
